@@ -2,7 +2,8 @@ FROM domjtalbot/volta:latest AS builder
 COPY package.json .
 RUN volta setup
 RUN npm install
-COPY src *.json ./
+COPY .postcssrc *.json *.js ./
+COPY src ./src
 RUN npx parcel build src/index.html
 
 # --
