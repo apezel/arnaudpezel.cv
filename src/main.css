@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-size: 15px;
+@layer base {
+  html {
+    font-size: 15px;
+  }
+  pages {
+    @apply origin-top 2xl:scale-110 3xl:scale-125;
+  }
 }
 
 

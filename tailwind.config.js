@@ -8,7 +8,8 @@ module.exports = {
         tiny: '0.5rem'
       },
       screens: {
-        'print': { 'raw': 'print' }
+        'print': { 'raw': 'print' },
+        '3xl': '1920px'
       }
     },
   },
